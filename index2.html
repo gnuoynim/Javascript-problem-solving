@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      # 문제제목 ## 설명 배열 원소의 age가 30이상 50미만인 사람만 있는 객체의
+      배열을 만드세요 ## Expected Output [ { name: '일미', age: 35 }, { name:
+      '이미', age: 45 } ]
+    </div>
+    <script>
+      const inputArray = [
+        {
+          name: '영미',
+          age: 25,
+        },
+        {
+          name: '일미',
+          age: 35,
+        },
+        {
+          name: '이미',
+          age: 45,
+        },
+        {
+          name: '삼미',
+          age: 55,
+        },
+      ]
+
+      console.log(inputArray)
+
+      const arr = inputArray.filter((a) => a.age >= 30 && a.age < 50)
+      console.log(arr)
+    </script>
+  </body>
+</html>
